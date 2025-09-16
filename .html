@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Image Carousel</h1>
+            <p class="description">Explore current weather conditions in different cities</p>
+        </header>
+        
+        <div class="carousel">
+            <div class="carousel-container">
+                <!-- Slide 1: Nagpur -->
+                <div class="slide">
+                    <h2 class="city-name">Nagpur</h2>
+                    <div class="weather-info">
+                        <div class="temperature">32<span class="unit">°C</span></div>
+                        <div class="details">
+                            <div class="weather-icon">☀️</div>
+                            <div class="weather-description">sunny</div>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div>Wind: 12 km/h</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div>Humidity: 45%</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <div>Pressure: 1013 hPa</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-eye"></i>
+                            <div>Visibility: 10 km</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Mumbai -->
+                <div class="slide">
+                    <h2 class="city-name">Mumbai</h2>
+                    <div class="weather-info">
+                        <div class="temperature">29<span class="unit">°C</span></div>
+                        <div class="details">
+                            <div class="weather-icon">🌧️</div>
+                            <div class="weather-description">rainy</div>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div>Wind: 18 km/h</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div>Humidity: 85%</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <div>Pressure: 1008 hPa</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-eye"></i>
+                            <div>Visibility: 6 km</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Delhi -->
+                <div class="slide">
+                    <h2 class="city-name">Delhi</h2>
+                    <div class="weather-info">
+                        <div class="temperature">36<span class="unit">°C</span></div>
+                        <div class="details">
+                            <div class="weather-icon">⛅</div>
+                            <div class="weather-description">partly cloudy</div>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div>Wind: 10 km/h</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div>Humidity: 35%</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <div>Pressure: 1010 hPa</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-eye"></i>
+                            <div>Visibility: 8 km</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4: Pune -->
+                <div class="slide">
+                    <h2 class="city-name">Pune</h2>
+                    <div class="weather-info">
+                        <div class="temperature">28<span class="unit">°C</span></div>
+                        <div class="details">
+                            <div class="weather-icon">🌦️</div>
+                            <div class="weather-description">light rain</div>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div>Wind: 14 km/h</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div>Humidity: 75%</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <div>Pressure: 1012 hPa</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-eye"></i>
+                            <div>Visibility: 9 km</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-buttons">
+            <button class="nav-btn" id="prev-btn">
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <button class="nav-btn" id="next-btn">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+        
+        <div class="api-info">
+            <p>Weather data is simulated for demonstration purposes</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
